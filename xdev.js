@@ -709,48 +709,48 @@ anu = await fetchJson(`https://xdev-api.herokuapp.com/muslim/niatshalat`)
             break
      case 'waifu':
      reply(mess.wait)
-waifu = await getBuffer(`https://xdev-api.herokuapp.com/waifu`)
+waifu = await getBuffer(`https://api.lolhuman.xyz/api/random/waifu`)
 xdev.sendMessage(from, waifu, image, {quoted: ftroli})
 break
 case 'loli':
 reply(mess.wait)
-loli = await getBuffer(`https://xdev-api.herokuapp.com/loli`)
+loli = await getBuffer(`https://api.lolhuman.xyz/api/random/loli`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'sagiri':
 reply(mess.wait)
-loli = await getBuffer(`https://xdev-api.herokuapp.com/sagiri`)
+loli = await getBuffer(`https://api.lolhuman.xyz/api/random/sagiri`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'neko':
 reply(mess.wait)
-loli = await getBuffer(`https://api-alphabot.herokuapp.com/api/nsfw/nsfwNeko`)
+loli = await getBuffer(`https://api.lolhuman.xyz/api/random/neko`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'megumin':
 reply(mess.wait)
-loli = await getBuffer(`https://xdev-api.herokuapp.com/megumin`)
+loli = await getBuffer(`https://api.lolhuman.xyz/api/random/megumin`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'nsfwneko':
 reply(mess.wait)
-loli = await getBuffer(`https://api-alphabot.herokuapp.com/api/nsfw/nsfwNeko`)
+loli = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/neko`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'nsfwwaifu':
 reply(mess.wait)
-loli = await getBuffer(`https://xdev-api.herokuapp.com/nsfw/waifu`)
+loli = await getBuffer(`https://api.lolhuman.xyz/api/random/nsfw/waifu`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'wallpaperanime':
 reply(mess.wait)
-loli = await getBuffer(`https://xdev-api.herokuapp.com/wpnime`)
+loli = await getBuffer(`https://api.lolhuman.xyz/api/random/wallnime`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 
 case 'husbu':
 reply(mess.wait)
-tod = await fetchJson(`https://xdev-api.herokuapp.com/husbu`)
+tod = await fetchJson(`https://api.lolhuman.xyz/api/random/husbu`)
 tid = await getBuffer(tod.url)
 xdev.sendMessage(from, tid, image, {quoted: ftroli})
 break
@@ -782,7 +782,7 @@ break
 
 case 'wallpaper':
 reply(mess.wait)
-tod = await fetchJson(`https://api-alphabot.herokuapp.com/api/random/wallpaper`)
+tod = await fetchJson(`https://api.lolhuman.xyz/api/random2/wallpaper`)
 xdev.sendMessage(from, await getBuffer(tod.result.url), image, {quoted: ftroli})
 break
 case 'darkjokes':
