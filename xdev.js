@@ -69,7 +69,7 @@ banChats = false
 offline = false
 targetpc = '0'
 ownerNumber = ["48732105404@s.whatsapp.net"]
-fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\n - TEAMIMOUTO'
+fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\n TEAMIMOUTO'
 fake1 = 'TEAMIMOUTO'
 numbernye = '0'
 waktu = '-'
@@ -339,7 +339,7 @@ module.exports = xdev = async (xdev, dev) => {
     if (!AntiVirtex) return
     if (isGroupAdmins) return
     reply('Tandai telah dibaca\n'.repeat(300))
-    reply(`「 *PETUGAS PEMBERSIH* 」\n\nKamu nakal si! Ngapain kirim virus? \nMaaf tapi aku harus mengeluarkan kamu...\nSelamat tingal~`)
+    reply(`「 *PETUGAS PEMBERSIH* 」\n\nKamu nakal si! Ngapain kirim virus? \nMaaf tapi aku harus mengeluarkan kamu...\nSelamat tinggal~`)
     console.log(color('[KICK]', 'red'), color('Received a virus text!', 'yellow'))
     xdev.groupRemove(from, [sender])
     }
@@ -701,7 +701,7 @@ anu = await fetchJson(`https://xdev-api.herokuapp.com/muslim/niatshalat`)
 				   reply(teks)
 				break
     case 'chara':
-            if(!q) return reply(`gambar apa?\n${prefix}chara nino`)
+            if(!q) return reply(`gambar apa?\n${prefix}chara sayu`)
             let im = await hx.chara(q)
             let acak = im[Math.floor(Math.random() * im.length)]
             let li = await getBuffer(acak)
@@ -724,7 +724,7 @@ xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'neko':
 reply(mess.wait)
-loli = await getBuffer(`https://xdev-api.herokuapp.com/neko`)
+loli = await getBuffer(`https://api-alphabot.herokuapp.com/api/nsfw/nsfwNeko`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'megumin':
@@ -734,7 +734,7 @@ xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'nsfwneko':
 reply(mess.wait)
-loli = await getBuffer(`https://xdev-api.herokuapp.com/nsfw/neko`)
+loli = await getBuffer(`https://api-alphabot.herokuapp.com/api/nsfw/nsfwNeko`)
 xdev.sendMessage(from, loli, image, {quoted: ftroli})
 break
 case 'nsfwwaifu':
@@ -782,7 +782,7 @@ break
 
 case 'wallpaper':
 reply(mess.wait)
-tod = await fetchJson(`https://xdev-api.herokuapp.com/random/wallpaper`)
+tod = await fetchJson(`https://api-alphabot.herokuapp.com/api/random/wallpaper`)
 xdev.sendMessage(from, await getBuffer(tod.result.url), image, {quoted: ftroli})
 break
 case 'darkjokes':
@@ -864,7 +864,7 @@ anu = await fetchJson(`https://xdev-api.herokuapp.com/google?q=${q}`)
 				   reply(teks)
 				break
 case 'caklontong':
-tod = await fetchJson(`https://xdev-api.herokuapp.com/kuis/caklontong?apikey=MASUKAN_APIKEY`)
+tod = await fetchJson(`https://api-alphabot.herokuapp.com/api/kuis/caklontong?apikey=Alphabot`)
 tid = tod.result.soal
 ted = tod.result.deskripsi
 reply(tid)
@@ -873,7 +873,7 @@ reply(ted)
 }, 20000)
 break
 case 'tebakgambar':
-tod = await fetchJson(`https://xdev-api.herokuapp.com/kuis/tebakgambar?apikey=MASUKAN_APIKEY`)
+tod = await fetchJson(`https://api-alphabot.herokuapp.com/api/kuis/tebakgambar?apikey=Alphabot`)
 tid = await getBuffer(tod.result.images)
 ted = tod.result.jawaban
 xdev.sendMessage(from, tid, image, {quoted: ftroli, caption: 'Tebak gambar nya dalam 30 detik'})
