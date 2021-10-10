@@ -1,4 +1,4 @@
-// SC BY X - Dev Team
+// SC BY TEAMIMOUTO
 // JANGAN DIPERJUAL BELIKAN !
 
 const
@@ -68,9 +68,9 @@ let bancht = JSON.parse(fs.readFileSync('./database/banchat.json'))
 banChats = false
 offline = false
 targetpc = '0'
-ownerNumber = ["48732105404@s.whatsapp.net"]
+ownerNumber = ["380944486343@s.whatsapp.net"]
 fake = '𝑪𝑹𝑬𝑨𝑻𝑶𝑹 𝑩𝑶𝑻\n TEAMIMOUTO'
-fake1 = 'TEAMIMOUTO'
+fake1 = '_*© 𝙲𝚁𝙴𝙰𝚃𝙴𝙳 𝙱𝚈 ᚛ᷝ ͣ ͫ𝖍𝖆𝖗𝖚𝖓͘⁴̅⁰͍⁴̵〆 ͭ ͪ᚜ͤ*_'
 numbernye = '0'
 waktu = '-'
 alasan = '-'
